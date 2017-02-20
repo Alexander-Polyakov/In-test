@@ -1,14 +1,163 @@
-html, body
-  margin: 0
-  height: 100%
 
 body
-  box-shadow: inset 0 0 500px
+    font-family: "base-reg", Helvetica, Arial, sans-serif
+    line-height: 1.2em
 
-.logo
-  left: 50%
-  margin-left: -37.5px
-  margin-top: -39.5px
-  position: absolute
-  top: 50%
-  font-size: 0
+.navbar-inverse .navbar-nav > li > a
+    color: #fff
+    text-decoration: underline
+
+.icon-vk
+    &:before
+        content: ''
+        +sprite(icon-vk, '', 'abs_middle')
+
+.icon-mail
+    &:before
+        content: ''
+        +sprite(icon-mail, '', 'abs_middle')
+
+.icon-fb
+    &:before
+        content: ''
+        +sprite(icon-fb, '', 'abs_middle')
+
+
+.navbar-header
+    margin-right: 20px
+
+.soc, .language
+    list-style: none
+    float: left
+    padding: 0
+    margin: 0
+
+.soc > li, .language > li
+    float: left
+    position: relative
+    display: block
+    margin-right: 7px
+    &:last-child
+        margin-right: 0
+
+.language > li
+    margin-right: 10px
+    &:last-child
+        margin-right: 0
+        
+.language > li > a
+    color: #fff
+    text-decoration: underline
+
+.soc > li > a
+    padding: 0
+    background-color: #fff
+    width: 28px
+    height: 28px
+    position: relative
+    border-radius: 5px
+    display: block
+    &:hover
+        background-color: #fff
+
+.navbar
+    padding: 15px 0
+
+
+.navbar-nav > li > a
+    padding: 10px 15px
+    border-radius: 7px
+
+.phone
+    color: #fff
+    font-size: 23px
+    text-decoration: none
+    display: inline-block
+    position: relative
+    padding-left: 45px
+    &:hover
+        color: #fff
+    &:before
+        content: ''
+        +sprite(icon-phone, '', 'abs_middle')
+        left: 0
+        margin-left: 0
+
+
+
+/// Good style//
+
+$blue-light: #009dcb
+
+.nav-grid
+    margin-top: -20px
+    margin-left: -15px
+    display: flex
+    flex-wrap: wrap
+
+.nav-grid__item
+    padding-left: 15px
+    padding-top: 20px
+    width: 33.3%
+    &:nth-child(6n+1), &:nth-child(6n+5)
+        .nav-grid-item
+            background-color: #009dcb
+    &:nth-child(6n+2), &:nth-child(6n+6)
+        .nav-grid-item
+            background-color: #9cd0e8
+    &:nth-child(6n+3), &:nth-child(6n+4)
+        .nav-grid-item
+            background-color: #254b7c
+
+.nav-grid-item
+    height: 150px
+    display: flex
+    align-items: center
+    padding: 20px 40px 20px 20px
+    position: relative
+    &:after
+        content: ''
+        +sprite(pattern, '', 'abs_middle')
+        left: auto
+        margin-left: auto
+        right: 10px
+
+.nav-grid-item__content
+    font-size: 23px
+    line-height: 1.2em
+    color: #fff
+
+.nav-grid-item__image
+    max-width: 110px
+    max-height: 120px
+    margin-right: 15px
+
+.section
+    padding: 50px 0
+    
+.section_gray
+    background-color: #eee
+
+.section__title
+    color: $blue-light
+    font-size: 50px
+    text-align: center
+    margin-bottom: 35px
+    line-height: 1em
+    text-transform: uppercase
+
+.section__title_dark
+    color: #254b7b
+
+.step-grid
+    display: flex
+    flex-wrap: wrap
+
+.step-grid__item
+    width: 33.3%
+    padding: 0 40px
+    text-align: center
+
+.step-grid-item__descr
+    color: #254b7a
+
