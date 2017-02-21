@@ -1,0 +1,145 @@
+{% extends "layouts/app.twig" %}
+
+{% block pageTitle %} Результат{% endblock %}
+
+
+{% block content %}
+    <div class="site-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__navbar navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="header__logo logo" href="#">
+                        <img class="logo__image" src="images/logo-white.png" alt="">
+                    </a>
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse" aria-expanded="false">
+                    <div class="header__flex">
+                        <div class="header__flex-item">
+                            <ul class="header__language language">
+                                <li><a href="#">Қаз</a></li>
+                                <li><a href="#">Рус</a></li>
+                            </ul>
+                            <a class="header__phone phone" href="#">8 777 666-55-44</a>
+                        </div>
+                        <div class="header__flex-item">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">О сайте</a></li>
+                                <li><a href="#">НПА</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Оплата</a></li>
+                                <li><a href="#">Регистрация</a></li>
+                                <li><a href="#">Войти</a></li>
+                            </ul>
+                            <ul class="soc">
+                                <li>
+                                    <a class="icon-vk" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="icon-mail" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="icon-fb" href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="section">
+                <div class="container">
+                    <div class="section__title">Результат</div>
+
+                    <div class="result">
+                        <div class="result__title">Информация</div>
+                        <div class="result__info table table_info">
+                            <div class="table__tr">
+                                <div class="table__td">ФИО</div>
+                                <div class="table__td">Иванов Иван Иванович</div>
+                            </div>
+                            <div class="table__tr">
+                                <div class="table__td">Специальность</div>
+                                <div class="table__td">Строительство</div>
+                            </div>
+                            <div class="table__tr">
+                                <div class="table__td">Должность</div>
+                                <div class="table__td">Мастер</div>
+                            </div>
+                            <div class="table__tr">
+                                <div class="table__td">Проходной балл</div>
+                                <div class="table__td">60</div>
+                            </div>
+                        </div>
+
+                        <div class="result__result result-table">
+                            <div class="result-table__status success"><span class="bold">Тест провален.</span> Набрано баллов: 20 из 50 возможных.</div>
+                            <div class="result-table__table table table_result">
+                                <div class="table__tr">
+                                    <div class="table__th">Группа вопросов</div>
+                                    <div class="table__th">Результат</div>
+                                </div>
+                                <div class="table__tr">
+                                    <div class="table__td">Текст</div>
+                                    <div class="table__td">Текст</div>
+                                </div>
+                                <div class="table__tr">
+                                    <div class="table__td">Текст</div>
+                                    <div class="table__td">Текст</div>
+                                </div>
+                            </div>
+                            <div class="result-table__balls"><span class="blue-text">Набрано баллов:</span> 23 из 60 необходимых</div>
+                        </div>
+
+                        <div class="result__footer">
+                            <button type="button" class="btn btn-primary btn-block">Распечатать результат</button>
+                            <a class="result__close-page" href="#">Закрыть страницу с результатом</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__container">
+                    <div class="footer__left">
+                        <a class="footer__logo logo" href="#">
+                            <img class="logo__image" src="images/logo-white.png" alt="">
+                            <p class="footer__copy">Все права защищены</p>
+                        </a>
+                        <a class="footer__phone phone" href="#">8 777 666-55-44</a>
+                        <div class="footer__contacts footer-contacts">
+                            <p class="footer-contacts__title">Контакты</p>
+                            <p class="footer-contacts__text">Республика Казахстан, г. Алматы ул. Пушкина, 18, оф.5</p>
+                        </div>
+                    </div>
+                    <div class="footer__right">
+                        <ul class="footer__soc soc">
+                            <li>
+                                <a class="icon-vk" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="icon-mail" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="icon-fb" href="#"></a>
+                            </li>
+                        </ul>
+                        <div class="footer__statistics"></div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+{% endblock %}
